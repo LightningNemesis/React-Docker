@@ -6,4 +6,4 @@ before_install:
   - docker build -t lightningnemesis/React-Docker -f Dockerfile.dev .
 
 script:
-  - docker run lightningnemesis/React-Docker npm run test -- --coverage
+  - docker run lightningnemesis/react-docker npm run test -- --coverage
