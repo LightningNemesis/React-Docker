@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t lightningnemesis/React-Docker -f Dockerfile.dev .
+  - docker build -t lightningnemesis/react-docker -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true lightningnemesis/react-docker_new npm run test 
+  - docker run -e CI=true lightningnemesis/react-docker npm run test 
